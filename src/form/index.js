@@ -13,7 +13,7 @@ const Index=()=>{
         <>
        
     <form onSubmit={handleSubmit} className="form">
-        <div>
+        <div className="int">
         <input 
         type="text" 
         value={name}
@@ -25,7 +25,7 @@ const Index=()=>{
     {data.map((person)=>{
         return(
             <div key={person.id} className="item">
-                <h4>{person.name}</h4>
+                <h4 className="name">{person.name}</h4>
                 <div>
                 <button className="btn">remove</button>
                 </div>
