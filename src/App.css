@@ -22,9 +22,11 @@
 .int {
   margin-left: 40%;
 }
-.form button {
-  margin-left: 49%;
-  margin-top: 10px;
+.btn {
+  position: absolute;
+  width: 52px;
+  top: 45%;
+  left: 45%;
 }
 .item {
   display: grid;
