@@ -55,3 +55,19 @@
 .item h4 {
   padding: 5px;
 }
+.modal {
+  margin-left: 35%;
+  margin-right: 35%;
+  height: 40px;
+
+  padding: 5px;
+  border-radius: 10px;
+}
+.modal > p {
+  width: 100%;
+  height: 100%;
+  /* justify-content: center; */
+  text-align: center;
+  overflow: hidden;
+  max-width: 30ch;
+}

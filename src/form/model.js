@@ -1,6 +1,17 @@
-import React from "react";
-const Model=()=>{
-    return (<p>this is model</p>)
+import React, { useEffect } from 'react';
 
-}
-export default Model;
+const Modal = ({ modalContent, closeModal }) => {
+
+    useEffect(() => {
+    setTimeout(() => {
+    closeModal();
+    }, 3000);
+});
+return (
+    <div className='modal'>
+    <p>{modalContent}</p>
+    </div>
+);
+};
+
+export default Modal;
