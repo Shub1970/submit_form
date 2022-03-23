@@ -13,15 +13,16 @@ const Index=()=>{
         <>
        
     <form onSubmit={handleSubmit} className="form">
-        <div className="int">
+    
         <input 
         type="text" 
         value={name}
         onChange={(e)=>{setName(e.target.value)}}
         />
-        </div>
+        
         <button className="btn">add</button>
     </form>
+    <div className="itemcontainer">
     {data.map((person)=>{
         return(
             <div key={person.id} className="item">
@@ -32,6 +33,7 @@ const Index=()=>{
             </div>
         )
     })}
+    </div>
     
 
     
